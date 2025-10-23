@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services — CyberShield Solutions</title>
+  <meta name="description" content="Free and paid cybersecurity and IT services for students and SMBs in India.">
+  <meta name="keywords" content="IT help desk, free cybersecurity India, penetration testing pricing, bug bounty consulting, network security" />
+  <meta property="og:title" content="Services — CyberShield Solutions" />
+  <meta property="og:description" content="Start free. Upgrade when you need more. IT support, pen testing, bug bounty, networking." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html"><span class="logo-mark"></span> CyberShield Solutions</a>
+      <nav>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">Menu ▾</button>
+        <div id="nav-links" class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="testimonials.html">Testimonials</a>
+          <a href="contact.html" class="btn">Get Started for Free</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1>Services</h1>
+    <p class="sub">Start free. Upgrade when you need more.</p>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="free"><i class="fa-solid fa-gift"></i> Free</button>
+      <button class="tab" data-tab="paid"><i class="fa-solid fa-crown"></i> Paid</button>
+    </div>
+
+    <div class="tab-panel active" data-tab="free">
+      <div class="accordion">
+        <div class="acc-item">
+          <div class="acc-head"><span><i class="fa-solid fa-headset icon"></i> Basic IT Help Desk</span><i class="fa-solid fa-angle-down"></i></div>
+          <div class="acc-body"><p>Software troubleshooting, virus scans, and basic fixes to get you productive fast.</p></div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-head"><span><i class="fa-solid fa-microchip icon"></i> Computer Hardware Diagnostics</span><i class="fa-solid fa-angle-down"></i></div>
+          <div class="acc-body"><p>RAM checks, overheating fixes, and performance tuning for smoother systems.</p></div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-head"><span><i class="fa-solid fa-download icon"></i> Software Installation</span><i class="fa-solid fa-angle-down"></i></div>
+          <div class="acc-body"><p>Linux installs, Java setups, and basic configuration guidance.</p></div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-head"><span><i class="fa-solid fa-diagram-project icon"></i> Basic Networking Assistance</span><i class="fa-solid fa-angle-down"></i></div>
+          <div class="acc-body"><p>Wi‑Fi setup, IP configuration, and router best practices for homes and SMBs.</p></div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-head"><span><i class="fa-solid fa-user-ninja icon"></i> Introductory Pen Testing Demo</span><i class="fa-solid fa-angle-down"></i></div>
+          <div class="acc-body"><p>Quick scan of a website with actionable suggestions and prioritized risks.</p></div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-head"><span><i class="fa-solid fa-bug icon"></i> Bug Bounty Consultation</span><i class="fa-solid fa-angle-down"></i></div>
+          <div class="acc-body"><p>Tips for new hunters and scope definition for organizations starting programs.</p></div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-head"><span><i class="fa-solid fa-shield-halved icon"></i> Simple Website Security Check</span><i class="fa-solid fa-angle-down"></i></div>
+          <div class="acc-body"><p>Basic security checks with web dev support to improve your site’s safety.</p></div>
+        </div>
+      </div>
+      <div style="margin-top:20px">
+        <button class="btn" data-open="requestModal">Request Free Service</button>
+        <a class="btn btn-outline" href="contact.html">More Ways to Contact</a>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-tab="paid">
+      <div class="grid cards-2">
+        <div class="card">
+          <h3><i class="fa-solid fa-user-shield icon"></i> Full Penetration Testing</h3>
+          <p>End‑to‑end assessments with detailed reporting. <strong>₹5,000–₹20,000</strong>.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fa-solid fa-flag-checkered icon"></i> Managed Bug Bounty</h3>
+          <p>Program setup and triage with transparent communication. <strong>10–50% fee</strong>.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fa-solid fa-network-wired icon"></i> Advanced Network Security</h3>
+          <p>Hardening, monitoring, and policy guidance. <strong>₹10,000+</strong>.</p>
+        </div>
+      </div>
+      <div style="margin-top:20px">
+        <button class="btn" data-open="requestModal">Request Free Service</button>
+        <a class="btn btn-outline" href="contact.html">Contact for Paid Solutions</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="cols">
+        <div>
+          <div class="logo"><span class="logo-mark"></span> CyberShield Solutions</div>
+          <p class="small">Empowering students and SMBs with affordable cybersecurity.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">About</a><br>
+          <a href="blog.html">Blog</a><br>
+          <a href="testimonials.html">Testimonials</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+      <p class="copy">© 2025 CyberShield Solutions • <a href="https://x.com/" target="_blank" rel="noreferrer">X</a> • <a href="https://linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a> • <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></p>
+    </div>
+  </footer>
+
+  <div class="modal" id="requestModal" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px">
+        <h3 style="margin:0">Request Free Service</h3>
+        <button class="btn btn-outline" data-close aria-label="Close">Close</button>
+      </div>
+      <form id="contact-form" class="form">
+        <div class="field">
+          <input class="input" name="name" placeholder=" " required />
+          <label>Name</label>
+        </div>
+        <div class="field">
+          <input class="input" name="email" placeholder=" " type="email" required />
+          <label>Email</label>
+        </div>
+        <div class="field">
+          <select name="service" class="input">
+            <option>Basic IT Help Desk</option>
+            <option>Computer Hardware Diagnostics</option>
+            <option>Software Installation</option>
+            <option>Basic Networking Assistance</option>
+            <option>Introductory Penetration Testing Demo</option>
+            <option>Bug Bounty Consultation</option>
+            <option>Simple Website Security Check</option>
+            <option>Other</option>
+          </select>
+          <label>Service Needed</label>
+        </div>
+        <div class="field">
+          <textarea name="message" placeholder=" " required></textarea>
+          <label>Message</label>
+        </div>
+        <button class="btn" type="submit">Send</button>
+        <p class="small">No backend yet. This uses your email app (mailto). Swap to Formspree later.</p>
+      </form>
+    </div>
+  </div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="container" style="display:flex; align-items:center; gap:12px; justify-content:space-between; flex-wrap:wrap">
+      <span class="small">We use basic cookies to improve experience. By using this site, you accept cookies.</span>
+      <div>
+        <button class="btn" id="cookieAccept">Accept</button>
+        <a class="btn btn-outline" href="privacy.html">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
