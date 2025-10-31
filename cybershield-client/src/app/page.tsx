@@ -4,10 +4,11 @@
 // import Blog from "./components/Blog";
 // import Testimonials from "./components/Testimonials";
 // import Contact from "./components/Contact";
-
+import Header from "./components/Navbar/index"
 import OrganizationHero from "./components/Hero/index"
 import ServicesSection from "./components/Services/index"
 import AboutSection from "./components/About/index"
+
 
 export default function Home() {
   return (

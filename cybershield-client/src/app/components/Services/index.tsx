@@ -2,9 +2,11 @@
 import { Card, CardContent, CardHeader } from "../ui/card";
 import { TimelineContent } from "../ui/timeline-animations";
 import VerticalCutReveal from "../ui/vertical-cut-reveal";
+import { Sparkles } from "lucide-react";
 import { useRef } from "react";
 
 export default function ServicesSection() {
+  const heroRef = useRef<HTMLDivElement>(null);
   const pricingRef = useRef<HTMLDivElement>(null);
   const revealVariants = {
     visible: (i: number) => ({
@@ -187,8 +189,10 @@ export default function ServicesSection() {
               </CardContent>
             </Card>
           </TimelineContent>
+
         </div>
       </div>
+      
     </section>
   );
 }

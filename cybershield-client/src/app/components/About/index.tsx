@@ -6,6 +6,7 @@ import Founder from "../../assests/Team-photos/Founder.png"
 import ButtonHover1 from "../ui/button-hover1";
 import { ArrowRight } from "lucide-react";
 import { useRef } from "react";
+import clsx from "clsx";
 
 export default function AboutSection() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -175,7 +176,7 @@ export default function AboutSection() {
           timelineRef={heroRef}
           className="bg-blue-600 hover:bg-blue-600 shadow-lg shadow-blue-600 border border-blue-600 flex w-fit mx-auto gap-2 hover:gap-4 transition-all duration-300 ease-in-out text-white px-5 py-3 rounded-full cursor-pointer"
         >
-          Explore Our Services <ArrowRight className="" />
+          <a href="/services">Explore Our Services</a> <ArrowRight className="" />
         </TimelineContent>
       </div>
       <div className="max-w-6xl mx-auto grid grid-cols-4 gap-4 pt-20 lg:h-[26rem] md:h-[22rem] sm:h-[16rem] h-[14rem]">
@@ -218,28 +219,19 @@ export default function AboutSection() {
                   ))}
                 </ul>
               </CardContent>
-              <button
-                    className="
-                        group relative inline-flex h-12 items-center justify-center 
-                        overflow-hidden rounded-md px-6 font-medium transition-all duration-100
-                        bg-transparent border-2 border-[#263381] text-black 
-                        from-[#f6f7ff] to-[#f5f6ff] bg-linear-to-r
-                        dark:from-[#070e41] dark:to-[#263381] dark:text-white 
-                        dark:border-[rgb(76_100_255)]
-
-                        translate-x-[3px] translate-y-[3px]
-                        [box-shadow:0px_0px_rgb(38_51_129)]
-                        hover:[box-shadow:5px_5px_rgb(38_51_129)]
-                        hover:translate-x-[0px] hover:translate-y-[0px]
-
-                        dark:hover:[box-shadow:5px_5px_rgb(76_100_255)]
-                        dark:active:[box-shadow:0px_0px_rgb(76_100_255)]
-                        active:[box-shadow:0px_0px_rgb(38_51_129)]
-                        active:translate-x-[3px] active:translate-y-[3px]
-                    "
-                    >
+                  <button
+                    className={clsx(
+                      "group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md px-6 font-medium transition-all duration-100",
+                      "bg-transparent border-2 border-[#263381] text-black from-[#f6f7ff] to-[#f5f6ff] bg-linear-to-r",
+                      "dark:from-[#070e41] dark:to-[#263381] dark:text-white dark:border-[rgb(76_100_255)]",
+                      "translate-x-[3px] translate-y-[3px] [box-shadow:0px_0px_rgb(38_51_129)]",
+                      "hover:[box-shadow:5px_5px_rgb(38_51_129)] hover:translate-x-[0px] hover:translate-y-[0px]",
+                      "dark:hover:[box-shadow:5px_5px_rgb(76_100_255)] dark:active:[box-shadow:0px_0px_rgb(76_100_255)]",
+                      "active:[box-shadow:0px_0px_rgb(38_51_129)] active:translate-x-[3px] active:translate-y-[3px]"
+                    )}
+                  >
                     Contact
-                </button>
+                  </button>
             </Card>
           
         {/* </TimelineContent> */}
