@@ -14,7 +14,7 @@ export default function Navbar() {
     <header
       className={clsx(
         "flex gap-2 z-50 text-neutral-900",
-        "sm:backdrop-blur-lg sm:border border-gray-200/80 sm:bg-white",
+        "sm:backdrop-blur-lg sm:border border-gray-200/80 ",
         "top-2 rounded-lg max-w-4xl items-center justify-between mx-auto px-3 p-2 sticky"
       )}
     >

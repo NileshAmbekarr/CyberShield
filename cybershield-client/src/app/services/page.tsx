@@ -5,45 +5,70 @@ import { useRef } from 'react';
 import Image from 'next/image';
 const projects = [
   {
-    title: 'Matthias Leidinger',
+    title: 'Basic IT Help Desk',
     description:
-      'Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.',
+      'Software troubleshooting, virus scans, malware removal, application crashes, installation errors, operating system issues, email client support, data recovery guidance, password resets, and basic fixes delivered remotely within 2-4 hours.',
     src: 'rock.jpg',
     link: 'https://images.unsplash.com/photo-1605106702842-01a887a31122?q=80&w=500&auto=format&fit=crop',
     color: '#5196fd',
   },
   {
-    title: 'Clément Chapillon',
+    title: ' Computer Hardware Diagnostics',
     description:
-      'This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French photographer Clément.',
+      'RAM testing, overheating solutions with thermal monitoring, hard drive health checks, battery troubleshooting, BIOS optimization, peripheral fixes, CPU stress testing, GPU benchmarking, and upgrade recommendations for peak performance.',
     src: 'tree.jpg',
     link: 'https://images.unsplash.com/photo-1605106250963-ffda6d2a4b32?w=500&auto=format&fit=crop&q=60',
     color: '#8f89ff',
   },
   {
-    title: 'Zissou',
+    title: ' Software Installation',
     description:
-      'Though he views photography as a medium for storytelling, Zissou’s images don’t insist on a narrative. Both crisp and ethereal.',
+      'Linux distribution installs with dual-boot, Windows setups, Java and Python configuration, IDE setup for VS Code and IntelliJ, Git and GitHub integration, database installations, antivirus deployment, and VPN configuration.',
     src: 'water.jpg',
     link: 'https://images.unsplash.com/photo-1605106901227-991bd663255c?w=500&auto=format&fit=crop',
     color: '#13006c',
   },
   {
-    title: 'Mathias Svold and Ulrik Hasemann',
+    title: ' Basic Networking Assistance',
     description:
-      'The coastlines of Denmark are documented in tonal colors in a pensive new series by Danish photographers Ulrik Hasemann and Mathias Svold; an ongoing project investigating how humans interact with and disrupt the Danish coast.',
+      'Wi-Fi router setup and optimization, IP configuration, subnet planning, connection troubleshooting, router security with WPA3 encryption, mesh network planning, file sharing across devices, guest network isolation, and port forwarding.',
     src: 'house.jpg',
     link: 'https://images.unsplash.com/photo-1605106715994-18d3fecffb98?w=500&auto=format&fit=crop&q=60',
     color: '#ed649e',
   },
   {
-    title: 'Mark Rammers',
+    title: ' Introductory Pen Testing Demo',
+    description:
+      'Free automated vulnerability scan focusing on OWASP Top 10 threats including SQL injection and XSS, color-coded risk findings, actionable remediation suggestions, security score rating, and 30-minute follow-up consultation.',
+    src: 'cactus.jpg',
+    link: 'https://images.unsplash.com/photo-1506792006437-256b665541e2?w=500&auto=format&fit=crop',
+    color: '#fd521a',
+  },
+  {
+    title: ' Simple Website Security Check',
+    description:
+      'SSL/TLS validation, HTTPS enforcement, security header assessment, CMS security review for WordPress and Joomla, outdated plugin detection, client-side vulnerability scanning, malware injection detection, and web dev support.',
+    src: 'cactus.jpg',
+    link: 'https://images.unsplash.com/photo-1506792006437-256b665541e2?w=500&auto=format&fit=crop',
+    color: '#fd521a',
+  },
+  /*
+  {
+    title: ' Introductory Pen Testing Demo',
     description:
       'Dutch photographer Mark Rammers has shared with IGNANT the first chapter of his latest photographic project, ‘all over again’—captured while in residency at Hektor, an old farm in Los Valles, Lanzarote.',
     src: 'cactus.jpg',
     link: 'https://images.unsplash.com/photo-1506792006437-256b665541e2?w=500&auto=format&fit=crop',
     color: '#fd521a',
   },
+  {
+    title: ' Introductory Pen Testing Demo',
+    description:
+      'Dutch photographer Mark Rammers has shared with IGNANT the first chapter of his latest photographic project, ‘all over again’—captured while in residency at Hektor, an old farm in Los Valles, Lanzarote.',
+    src: 'cactus.jpg',
+    link: 'https://images.unsplash.com/photo-1506792006437-256b665541e2?w=500&auto=format&fit=crop',
+    color: '#fd521a',
+  }, */
 ];
 export default function About(): JSX.Element {
   const container = useRef(null);
@@ -59,8 +84,11 @@ export default function About(): JSX.Element {
             <div className='absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-size-[54px_54px] mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]'></div>
 
             <h1 className='2xl:text-7xl text-5xl px-8 font-semibold text-center tracking-tight leading-[120%]'>
-              Stacking Cards Using <br /> Motion. Scroll down! 👇
+              Comprehensive IT & Security Services.
             </h1>
+            <h2 className='2xl:text-3xl text-2xl px-8 text-center tracking-tight leading-[120%]'>
+              Start Free, Scale as You Grow
+            </h2>
           </section>
         </>
 
@@ -83,13 +111,6 @@ export default function About(): JSX.Element {
             );
           })}
         </section>
-
-        <footer className='group bg-slate-950 '>
-          <h1 className='text-[16vw]  translate-y-20 leading-[100%] uppercase font-semibold text-center bg-linear-to-r from-gray-400 to-gray-800 bg-clip-text text-transparent transition-all ease-linear'>
-            ui-layout
-          </h1>
-          <div className='bg-black h-40 relative z-10 grid place-content-center text-2xl rounded-tr-full rounded-tl-full'></div>
-        </footer>
       </main>
     </ReactLenis>
   );
