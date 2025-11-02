@@ -15,14 +15,14 @@ export default function Navbar() {
       className={clsx(
         "flex gap-2 z-50 text-neutral-900",
         "sm:backdrop-blur-lg sm:border border-gray-200/80 ",
-        "top-2 rounded-lg max-w-4xl items-center justify-between mx-auto px-3 p-2 sticky"
+        "top-2 rounded-lg w-[100%] max-w-7xl  items-center justify-between mx-auto px-20 p-2 sticky"
       )}
     >
       {!isMobile ? (
         <>
           <h1 className="text-xl uppercase font-bold">LOGO</h1>
 
-          <nav className="flex gap-4 font-medium">
+          <nav className="flex gap-7 font-medium">
             <a href="/">Home</a>
             <a href="#services">Services</a>
             <a href="#about">About</a>
