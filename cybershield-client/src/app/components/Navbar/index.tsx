@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <header
       className={clsx(
-        "flex gap-2 z-50 text-neutral-900",
+        "flex gap-2 z-50 text-neutral-900 m-0",
         "sm:backdrop-blur-lg sm:border border-gray-200/80 ",
         "top-2 rounded-lg w-[100%] max-w-7xl  items-center justify-between mx-auto px-20 p-2 sticky"
       )}

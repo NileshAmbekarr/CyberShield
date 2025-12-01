@@ -206,12 +206,12 @@ export default function AboutSection() {
           className="w-full h-full rounded-lg overflow-hidden"
           style={{ clipPath: "url(#differentone16)" }}
         > */}
-            <Card className="bg-white p-0 border-neutral-200">
-              <CardHeader className="text-left py-4 border-b bg-gray-100 rounded-xl border-neutral-300">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Founder</h3>
+            <Card className="bg-white p-0 border-neutral-200 backdrop-blur-sm">
+              <CardHeader className="flex items-center text-left py-4 border-b bg-gray-100 rounded-xl border-neutral-300">
+                <h3 className="text-xl font-bold text-gray-900 m-2">Founder</h3>
               </CardHeader>
               <CardContent className="pb-6">
-                <ul className="space-y-3 mb-6">
+                <ul className="space-y-3 mb-6 m-4">
                   {founder.map((skill, index) => (
                     <li key={index} className="text-sm text-gray-700">
                       {skill}
@@ -219,19 +219,6 @@ export default function AboutSection() {
                   ))}
                 </ul>
               </CardContent>
-                  <button
-                    className={clsx(
-                      "group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md px-6 font-medium transition-all duration-100",
-                      "bg-transparent border-2 border-[#263381] text-black from-[#f6f7ff] to-[#f5f6ff] bg-linear-to-r",
-                      "dark:from-[#070e41] dark:to-[#263381] dark:text-white dark:border-[rgb(76_100_255)]",
-                      "translate-x-[3px] translate-y-[3px] [box-shadow:0px_0px_rgb(38_51_129)]",
-                      "hover:[box-shadow:5px_5px_rgb(38_51_129)] hover:translate-x-[0px] hover:translate-y-[0px]",
-                      "dark:hover:[box-shadow:5px_5px_rgb(76_100_255)] dark:active:[box-shadow:0px_0px_rgb(76_100_255)]",
-                      "active:[box-shadow:0px_0px_rgb(38_51_129)] active:translate-x-[3px] active:translate-y-[3px]"
-                    )}
-                  >
-                    Contact
-                  </button>
             </Card>
           
         {/* </TimelineContent> */}
@@ -255,12 +242,12 @@ export default function AboutSection() {
         </TimelineContent>
 
         {/* Bottom Right Image */}
-            <Card className="bg-white p-0 border-neutral-200">
-              <CardHeader className="text-left py-4 border-b bg-gray-100 rounded-xl border-neutral-300">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Co-Founder</h3>
+            <Card className="bg-white p-0 border-neutral-200 backdrop-blur-sm">
+              <CardHeader className="flex items-center text-left py-4 border-b bg-gray-100 rounded-xl border-neutral-300">
+                <h3 className="text-xl font-bold text-gray-900 m-2">Co-Founder</h3>
               </CardHeader>
-              <CardContent className="pb-6">
-                <ul className="space-y-3 mb-6">
+              <CardContent className="pb-6 backdrop-blur-sm">
+                <ul className="space-y-3 mb-6 m-4">
                   {member.map((skill, index) => (
                     <li key={index} className="text-sm text-gray-700">
                       {skill}
@@ -268,9 +255,8 @@ export default function AboutSection() {
                   ))}
                 </ul>
               </CardContent>
-               <button
-                    className="
-                        group relative inline-flex h-12 items-center justify-center 
+               {/* <button
+                    className="group relative inline-flex h-12 items-center justify-center 
                         overflow-hidden rounded-md px-6 font-medium transition-all duration-100
                         bg-transparent border-2 border-[#263381] text-black 
                         from-[#f6f7ff] to-[#f5f6ff] bg-linear-to-r
@@ -289,7 +275,7 @@ export default function AboutSection() {
                     "
                     >
                     Contact
-                </button>
+                </button> */}
               
             </Card>
       </div>

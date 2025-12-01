@@ -1,13 +1,8 @@
-// import Hero from "./components/Hero";
-// import Services from "./components/Services";
-// import About from "./components/About";
-// import Blog from "./components/Blog";
-// import Testimonials from "./components/Testimonials";
-// import Contact from "./components/Contact";
 import Header from "./components/Navbar/index"
 import OrganizationHero from "./components/Hero/index"
 import ServicesSection from "./components/Services/index"
 import AboutSection from "./components/About/index"
+import ClientFeedback from "./components/Testimonials/index"
 
 
 export default function Home() {
@@ -16,6 +11,7 @@ export default function Home() {
       <section id="home"><OrganizationHero /></section>
       <section id="services"><ServicesSection/></section>
       <section id="about"> <AboutSection/> </section>
+      <section id="testimonials"> <ClientFeedback/> </section>
     </>
   );
 }
