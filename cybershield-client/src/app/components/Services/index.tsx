@@ -52,8 +52,22 @@ export default function ServicesSection() {
     "Transparent communication with researchers",
   ];
   
+  const revealVariants3 = {
+    visible: (i: number) => ({
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay: i * 0.3,
+        duration: 0.7,
+      },
+    }),
+    hidden: {
+      opacity: 0,
+    },
+  };
 
   return (
+    <>
     <section
       className="py-16 px-4 bg-white relative min-h-screen"
       ref={pricingRef}
@@ -192,7 +206,20 @@ export default function ServicesSection() {
 
         </div>
       </div>
-      
     </section>
+    <section>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-999">
+            <TimelineContent
+                as="button"
+                animationNum={1}
+                customVariants={revealVariants3}
+                timelineRef={heroRef}
+                className="bg-blue-600 hover:bg-blue-600 shadow-lg shadow-blue-600 border border-blue-600 flex w-fit mx-auto gap-2 hover:gap-4 transition-all duration-300 ease-in-out text-white px-5 py-3 rounded-full cursor-pointer"
+              >
+              <a href="/services">Explore Our Services</a>
+          </TimelineContent>
+      </div>
+    </section>
+    </>
   );
 }
